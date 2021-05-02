@@ -8,6 +8,8 @@ import { FetchApiDataService } from '../fetch-api-data.service';
 // This is for mini notifications like alert is in JS
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-user-login-form',
   templateUrl: './user-login-form.component.html',
@@ -19,7 +21,8 @@ export class UserLoginFormComponent implements OnInit {
   constructor(
     public fetchApiData: FetchApiDataService,
     public dialogRef: MatDialogRef<UserLoginFormComponent>,
-    public snackBar: MatSnackBar
+    public snackBar: MatSnackBar,
+    public router: Router
   ) {}
 
   ngOnInit(): void {}
@@ -35,9 +38,10 @@ export class UserLoginFormComponent implements OnInit {
           localStorage.setItem('token', result.token);
           // Logic for a successful user registration goes here! (To be implemented)
           this.dialogRef.close(); // This will close the modal on success!
-          this.snackBar.open(result, 'OK', {
+          this.snackBar.open('Log In Successful.', 'OK', {
             duration: 5000,
           });
+          this.router.navigate(['movies']);
         },
         (result) => {
           this.snackBar.open(result, 'OK', {
