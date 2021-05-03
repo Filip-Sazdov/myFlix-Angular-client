@@ -1,0 +1,14 @@
+<div class='page-container'>
+  <button
+    mat-icon-button
+    color='basic'
+    [mat-dialog-close]='true'>
+    <mat-icon>close</mat-icon>
+  </button>
+  <h1>{{data.title}}</h1>
+  <img src={{data.imagePath}} alt={{data.title}} width="250px" />
+
+  <p>Directed by: {{data.genre}}</p>
+  <p>Genre: {{data.director}}</p>
+  <p>{{data.description}}</p>
+</div>

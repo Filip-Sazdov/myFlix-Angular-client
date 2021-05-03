@@ -24,6 +24,9 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserProfileUpdateComponent } from './user-profile-update/user-profile-update.component';
+import { DetailsDialogComponent } from './details-dialog/details-dialog.component';
+import { DirectorDialogComponent } from './director-dialog/director-dialog.component';
+import { GenreDialogComponent } from './genre-dialog/genre-dialog.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
@@ -42,6 +45,9 @@ const appRoutes: Routes = [
     UserProfileComponent,
     NavBarComponent,
     UserProfileUpdateComponent,
+    DetailsDialogComponent,
+    DirectorDialogComponent,
+    GenreDialogComponent,
   ],
   imports: [
     BrowserModule,
