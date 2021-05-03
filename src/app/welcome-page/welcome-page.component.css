@@ -1,0 +1,23 @@
+.main-page {
+  background-color: rgb(3, 118, 227);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 501px;
+  background-color: rgb(30, 33, 39);
+  border-radius: 2px;
+}
+
+.main-page-title {
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+  line-height: 50px;
+}
