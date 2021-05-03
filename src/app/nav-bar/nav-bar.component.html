@@ -1,0 +1,27 @@
+<div class='navbar'>
+  <div class='nav-container'>
+    <button
+      mat-button
+      class='app-title'
+      routerLink='/movies'
+      color='basic'>
+      myFlix
+    </button>
+    <div class='nav-links'>
+      <button
+        mat-button
+        class='profile'
+        routerLink='/profile'
+        color='basic'>
+        Profile
+      </button>
+      <button
+        mat-button
+        class='logout'
+        (click)='logOutUser()'
+        color='warn'>
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
