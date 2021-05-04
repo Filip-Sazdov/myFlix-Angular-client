@@ -63,7 +63,7 @@ export class FetchApiDataService {
     return this.http
       .get(apiUrl + '/movies/director/' + directorName, {
         headers: new HttpHeaders({
-          Authorization: 'Bearer' + token,
+          Authorization: 'Bearer ' + token,
         }),
       })
       .pipe(map(this.extractResponseData), catchError(this.handleError));
@@ -86,7 +86,7 @@ export class FetchApiDataService {
     return this.http
       .get(apiUrl + 'users/' + user, {
         headers: new HttpHeaders({
-          Authorization: 'Bearer' + token,
+          Authorization: 'Bearer ' + token,
         }),
       })
       .pipe(map(this.extractResponseData), catchError(this.handleError));
@@ -116,25 +116,14 @@ export class FetchApiDataService {
       .pipe(map(this.extractResponseData), catchError(this.handleError));
   }
 
-  getFavorites(): Observable<any> {
-    const token = localStorage.getItem('token');
-    const user = localStorage.getItem('user');
-    return this.http
-      .post(apiUrl + 'users/:Username/:Movies/:MovieID', {
-        headers: new HttpHeaders({
-          Authorization: 'Bearer ' + token,
-        }),
-      })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
-  }
-
   addFavoriteMovie(movieID: string): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
+    console.log(user, token);
     return this.http
-      .put(apiUrl + 'users/' + user + '/Movies/' + movieID, {
+      .post(apiUrl + 'users/' + user + '/Movies/' + movieID, movieID, {
         headers: new HttpHeaders({
-          Authorization: 'Bearer' + token,
+          Authorization: 'Bearer ' + token,
         }),
       })
       .pipe(catchError(this.handleError));
@@ -146,7 +135,7 @@ export class FetchApiDataService {
     return this.http
       .delete(apiUrl + 'users/' + user + '/movies/' + movieID, {
         headers: new HttpHeaders({
-          Authorization: 'Bearer' + token,
+          Authorization: 'Bearer ' + token,
         }),
       })
       .pipe(catchError(this.handleError));
