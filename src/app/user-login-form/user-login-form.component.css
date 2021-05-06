@@ -53,6 +53,7 @@
 
 #username, #password {
   border: 1px solid rgb(48, 51, 58);
+  border-radius: 4px;
   background-color: var(--black);
   color: var(--gray);
   display: block;

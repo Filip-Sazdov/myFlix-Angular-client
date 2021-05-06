@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 // Use this import to close the dialog on success
 import { MatDialogRef } from '@angular/material/dialog';
@@ -13,6 +13,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   selector: 'app-user-registration-form',
   templateUrl: './user-registration-form.component.html',
   styleUrls: ['./user-registration-form.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class UserRegistrationFormComponent implements OnInit {
   @Input() userData = { Username: '', Password: '', Email: '', Birthday: '' };

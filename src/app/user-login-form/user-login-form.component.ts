@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 // Use this import to close the dialog on success
 import { MatDialogRef } from '@angular/material/dialog';
@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
   selector: 'app-user-login-form',
   templateUrl: './user-login-form.component.html',
   styleUrls: ['./user-login-form.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class UserLoginFormComponent implements OnInit {
   @Input() userData = { Username: '', Password: '' };
@@ -36,7 +37,6 @@ export class UserLoginFormComponent implements OnInit {
           console.log('from log in', result);
           localStorage.setItem('user', result.user.Username);
           localStorage.setItem('token', result.token);
-          // Logic for a successful user registration goes here! (To be implemented)
           this.dialogRef.close(); // This will close the modal on success!
           this.snackBar.open('Log In Successful.', 'OK', {
             duration: 5000,
