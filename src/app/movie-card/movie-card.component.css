@@ -1,0 +1,55 @@
+.movie-card-container {
+  --blue: rgb(3, 118, 227);
+  --default-font: 'Archivo', sans-serif;
+  --gray: rgb(130, 141, 153);
+  --black: rgb(30, 33, 39);
+  --border-gray: rgb(48, 51, 58);
+  width: 80vw;
+  min-width: 400px;
+  margin: 0 auto;
+  padding-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 50px;
+  justify-content: center;
+}
+
+.movie-card {
+  height: 680px;
+  background-color: var(--black);
+  box-shadow: -3px 0px 5px 5px rgb(22, 24, 29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--default-font);
+  font-weight: 300;
+}
+
+.card-wrapper {
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-wrapper img {
+  width: 326px;
+}
+
+.title-wrapper {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card-actions-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.card-buttons {
+  color: var(--blue);
+}

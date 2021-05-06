@@ -1,27 +1,26 @@
 <div class='navbar'>
   <div class='nav-container'>
-    <button
-      mat-button
-      class='app-title'
-      routerLink='/movies'
-      color='basic'>
-      myFlix
-    </button>
+
     <div class='nav-links'>
-      <button
-        mat-button
-        class='profile'
-        routerLink='/profile'
-        color='basic'>
-        Profile
-      </button>
-      <button
-        mat-button
-        class='logout'
-        (click)='logOutUser()'
-        color='warn'>
-        Logout
-      </button>
+      <a
+        class='app-title'
+        routerLink='/movies'>
+        myFlix
+      </a>
     </div>
+
+    <div class='nav-links nav-links-right'>
+      <a
+        class='profile'
+        routerLink='/profile'>
+        PROFILE
+      </a>
+      <a
+        class='logout'
+        (click)='logOutUser()'>
+        LOG OUT
+      </a>
+    </div>
+
   </div>
 </div>
