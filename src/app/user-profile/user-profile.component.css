@@ -1,0 +1,153 @@
+.profile-card-container {
+  --blue: rgb(3, 118, 227);
+  --default-font: 'Archivo', sans-serif;
+  --black: rgb(30, 33, 39);
+  --darker-black: rgb(27, 29, 36);
+  --gray: rgb(130, 141, 153);
+  background-color: var(--darker-black);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+}
+
+.profile-card-wrapper {
+  margin-top: 60px;
+  width: 80vw;
+  min-width: 500px;
+  height: 80vh;
+  background-color: var(--black);
+  box-shadow: -3px 0px 5px 5px rgb(22, 24, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeriser {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info, .fav-movies {
+  width: 85%;
+  height: 85%;
+}
+
+.profile-info {
+  flex: 0 1 50%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.profile-info h1 {
+  color: white;
+  font-size: 32px;
+  font-family: var(--default-font);
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.general-info {
+  color: rgb(190, 194, 204);
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.general-info p:nth-child(even) {
+  padding-left: 10px;
+  border: 1px solid rgb(130, 141, 153);
+  line-height: 36px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+#update-prof-dialog-button {
+  margin-top: 28px;
+  margin-left: 50px;
+  background-color: rgb(0, 147, 255);
+  color: white;
+  font-size: 16px;
+  font-family: var(--default-font);
+  font-weight: 300;
+  width: 80%;
+}
+
+.fav-movies {
+  flex: 0 0 40%;
+  background-color: var(--darker-black);
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  height: auto;
+  min-width: 350px;
+}
+
+.fav-movies-list {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.fav-movies h1 {
+  color: white;
+  font-size: 20px;
+  font-family: var(--default-font);
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 18px;
+}
+
+.favorites-cards {
+  background-color: var(--darker-black);
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 12px; */
+  font-weight: 300;
+}
+
+.white-title {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  display: block;
+}
+
+.gray-subtitle {
+  color: var(--gray);
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.delete-account-container {
+  margin-top: 100px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+#delete-account-button {
+  font-family: var(--default-font);
+  font-weight: 300;
+  font-size: 13px;
+  padding: 0;
+}
+
+#delete-icon {
+  font-size: 16px;
+  height: 16px;
+  width: 20px;
+}

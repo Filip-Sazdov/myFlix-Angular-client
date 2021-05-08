@@ -32,7 +32,7 @@
   color: white;
   font-weight: 300;
   font-family: var(--default-font);
-  margin: 0;
+  padding-top: 20px;
 }
 
 .sign-in-subtitle {
@@ -40,7 +40,10 @@
   line-height: 24px;
   color: var(--gray);
   font-family: var(--default-font);
-  margin: 0;
+}
+
+#sign-in-title {
+  margin-bottom: 0;
 }
 
 .sign-in-form {
@@ -63,9 +66,8 @@
 }
 
 ::placeholder {
-  /* color: red; */
   opacity: 1;
-  padding: 6px 37px 6px 12px;
+  padding: 6px 37px 6px 0;
   font-size: 15px;
   line-height: 24px;
 }

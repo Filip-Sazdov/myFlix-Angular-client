@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -9,6 +9,7 @@ import { FetchApiDataService } from '../fetch-api-data.service';
   selector: 'app-user-profile-update',
   templateUrl: './user-profile-update.component.html',
   styleUrls: ['./user-profile-update.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class UserProfileUpdateComponent implements OnInit {
   @Input() userData = { Username: '', Password: '', Email: '', Birthday: '' };

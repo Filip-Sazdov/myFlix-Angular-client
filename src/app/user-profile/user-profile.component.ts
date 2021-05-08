@@ -86,7 +86,7 @@ export class UserProfileComponent implements OnInit {
 
   profileUpdateDialog(): void {
     this.dialog.open(UserProfileUpdateComponent, {
-      width: '350px',
+      panelClass: 'update-dialog',
     });
   }
 }
