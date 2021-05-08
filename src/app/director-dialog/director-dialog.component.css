@@ -1,9 +1,63 @@
+.director-dialog .mat-dialog-container {
+  width: 700px;
+  min-width: 400px;
+  background-color: rgb(30, 33, 39);
+}
+
 .director-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  /* padding-top: 25px; */
 }
 
 #close-button {
   align-self: flex-end;
+  color: white;
+  background-color: rgb(27, 29, 36);
+}
+
+.director-container h1 {
+  color: white;
+}
+
+.director-container p {
+  color: rgb(130, 141, 153);
+}
+
+.director-container>p:nth-of-type(1) {
+  font-size: 11px;
+}
+
+.director-container>p:nth-of-type(2) {
+  border-bottom: 0.1px solid slategray;
+}
+
+.born-died-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 11px;
+}
+
+.born-died-wrapper>p:nth-of-type(1) {
+  margin-right: 100px;
+}
+
+.born-died-data-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  color: rgb(190, 194, 204);
+}
+
+.born-died-data-wrapper p {
+  font-size: 12px;
+  color: rgb(190, 194, 204);
+}
+
+.born-died-data-wrapper>p:nth-of-type(1) {
+  margin-right: 100px;
 }
