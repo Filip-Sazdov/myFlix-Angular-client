@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
 
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
@@ -6,6 +6,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   selector: 'app-genre-dialog',
   templateUrl: './genre-dialog.component.html',
   styleUrls: ['./genre-dialog.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class GenreDialogComponent implements OnInit {
   constructor(
