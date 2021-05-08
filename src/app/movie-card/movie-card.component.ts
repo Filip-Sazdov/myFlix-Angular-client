@@ -42,14 +42,14 @@ export class MovieCardComponent implements OnInit {
   ): void {
     this.dialog.open(DetailsDialogComponent, {
       data: { title, imagePath, description, director, genre },
-      width: '350px',
+      panelClass: 'details-dialog',
     });
   }
 
   showGenreDialog(name: string, description: string): void {
     this.dialog.open(GenreDialogComponent, {
       data: { name, description },
-      width: '350px',
+      panelClass: 'genre-dialog',
     });
   }
 
@@ -61,7 +61,7 @@ export class MovieCardComponent implements OnInit {
   ): void {
     this.dialog.open(DirectorDialogComponent, {
       data: { name, bio, birth, death },
-      width: '350px',
+      panelClass: 'director-dialog',
     });
   }
 
