@@ -8,6 +8,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./details-dialog.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
+
+/**
+ * This component provides a dialog/modal for detailed movie information.
+ *
+ */
 export class DetailsDialogComponent implements OnInit {
   constructor(
     @Inject(MAT_DIALOG_DATA)

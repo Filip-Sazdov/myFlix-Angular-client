@@ -8,6 +8,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./director-dialog.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
+
+/**
+ * This component provides a dialog/modal for the movie director info.
+ *
+ */
 export class DirectorDialogComponent implements OnInit {
   constructor(
     @Inject(MAT_DIALOG_DATA)

@@ -8,6 +8,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./genre-dialog.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
+
+/**
+ * This component provides a dialog/modal for genre info.
+ *
+ */
 export class GenreDialogComponent implements OnInit {
   constructor(
     @Inject(MAT_DIALOG_DATA)

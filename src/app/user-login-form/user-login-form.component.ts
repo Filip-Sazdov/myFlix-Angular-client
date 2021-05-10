@@ -16,6 +16,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./user-login-form.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
+
+/**
+ * This component renders the Log In form.
+ */
 export class UserLoginFormComponent implements OnInit {
   @Input() userData = { Username: '', Password: '' };
 
@@ -28,13 +32,15 @@ export class UserLoginFormComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // This is the function responsible for sending the form inputs to the backend
+  /**
+   * This method sends the form inputs to the backend
+   * and saves the user and token from the server response to local storage
+   */
   logInUser(): void {
     this.fetchApiData
       .userLogin(this.userData.Username, this.userData.Password)
       .subscribe(
         (result) => {
-          console.log('from log in', result);
           localStorage.setItem('user', result.user.Username);
           localStorage.setItem('token', result.token);
           this.dialogRef.close(); // This will close the modal on success!
