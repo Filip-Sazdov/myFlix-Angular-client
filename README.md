@@ -2,6 +2,11 @@
 
 This is the second client-side version for the API I built as part of my CareerFoundry Web Development curriculum, only this time built with Angular and Typescript. The previous version built with React lives [here](https://movie-api-client.netlify.app/) and the repo for it is [here](https://github.com/Filip-Sazdov/movie_api-client).
 
+![image](https://user-images.githubusercontent.com/45643632/118215297-447e4f80-b43f-11eb-8261-7abb6a3a8f92.png)
+
+![image](https://user-images.githubusercontent.com/45643632/118215457-88715480-b43f-11eb-9d69-8b91cb2c2f1e.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
 ## Development server
